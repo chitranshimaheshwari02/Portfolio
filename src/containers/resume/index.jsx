@@ -5,6 +5,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 import resumePath from '../../../src/public/CHITRANSHI_MAHESHWARI_RESUME (3).pdf'
+//chitranshi's portfolio
 const Resume = () => {
   return (
     <div className='resume-background'>
