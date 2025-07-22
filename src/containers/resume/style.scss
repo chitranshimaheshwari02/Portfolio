@@ -1,0 +1,206 @@
+.resume-heading {
+  padding: 20px;
+  color: rgb(231, 198, 154);
+  background-color: #0d0d0d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+.resume-background{
+  background-color: #0d0d0d;
+}
+
+.download-button {
+  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 30px;
+
+  &:hover {
+    background-color: #f5c400;
+  }
+}
+
+.pdf-viewer {
+  max-width: 55vw;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 0;
+  background-color: #0d0d0d !important;
+}
+
+.pdf-viewer-wrapper {
+  background-color: #0d0d0d !important;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pdf-viewer-wrapper canvas {
+  background-color: #0d0d0d !important;
+}
+
+// @media screen and (max-width: 768px) {
+//   .pdf-viewer {
+//     max-width: 95vw;
+//     overflow-x: hidden;
+//   }
+
+//   .pdf-viewer-wrapper {
+//     justify-content: center;
+//   }
+
+//   .pdf-viewer-wrapper canvas {
+//     width: 100% !important;        
+//     height: auto !important;
+//     max-width: 100% !important;
+//     transform: none !important;
+//   }
+
+//   .rpv-core__viewer {
+//     width: 100% !important;       
+//   }
+
+//   .rpv-core__inner-pages {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   body,
+//   html {
+//     background-color: #0d0d0d !important;
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+//   }
+
+//   .resume-background {
+//     background-color: #0d0d0d !important;
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//   }
+
+//   .pdf-viewer,
+//   .pdf-viewer-wrapper {
+//     display: none !important;
+//   }
+
+//   .download-button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 80px auto 20px auto;
+//     width: fit-content;
+//   }
+
+//   footer {
+//     margin-top: auto;
+//     padding: 20px;
+//     background-color: #0d0d0d;
+//     color: white;
+//     text-align: center;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   html, body {
+//     background-color: #0d0d0d !important;
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+//   }
+
+//   .resume-background {
+//     background-color: #0d0d0d !important;
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center; /* Vertically center */
+//     align-items: center;     /* Horizontally center */
+//   }
+
+//   .pdf-viewer,
+//   .pdf-viewer-wrapper {
+//     display: none !important;
+//   }
+
+//   .resume-heading {
+//     display: none;
+//   }
+
+//   .download-button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 12px 24px;
+//     background-color: yellow;
+//     color: black;
+//     font-weight: bold;
+//     text-decoration: none;
+//     border-radius: 8px;
+//     width: fit-content;
+//   }
+
+//   footer {
+//     display: none;
+//   }
+// }
+@media screen and (max-width: 768px) {
+  html, body {
+    background-color: #0d0d0d !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .resume-background {
+    background-color: #0d0d0d !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px; /* leaves space for footer */
+  }
+
+  .pdf-viewer,
+  .pdf-viewer-wrapper {
+    display: none !important;
+  }
+
+  .download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 40px auto;
+    width: fit-content;
+  }
+
+  footer {
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+  }
+}

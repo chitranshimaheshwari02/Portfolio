@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #000; 
+  padding: 20px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      position: relative;
+      transition: all 0.3s ease;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: -5px;
+        background-color: rgb(220, 166, 95);
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after,
+      &.active::after {
+        width: 100%;
+      }
+
+      &:hover,
+      &.active {
+        color: rgb(220, 166, 95);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,186 @@
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+
+  &__intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    justify-content: center;
+  }
+
+  &__name {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(231, 198, 154);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    justify-content: center;
+  }
+
+  &__subheading {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #dddddd;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 600px;
+    padding: 0 20px;
+    font-family: fantasy;
+  }
+
+  &__socials {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  &__icon {
+    color: #dfc95b;
+    font-size: 2rem;
+    transition: transform 0.3s, color 0.3s;
+
+    &:hover {
+      color: #c5ae3c;
+      transform: scale(1.2);
+    }
+  }
+
+  &__skills {
+    min-height: auto;
+    text-align: center;
+    padding: 40px 20px 60px;
+    color: #dddddd;
+
+    &-heading {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(231, 198, 154);
+      font-weight: 500;
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__skill-icon {
+    font-size: 4rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 150, 0.6));
+  }
+
+
+  &__about-visual {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+
+    .home__about-image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 10%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .home__about-text {
+      max-width: 500px;
+      color: #dddddd;
+      text-align: left;
+      margin-top: 10px;
+
+      h2 {
+        font-size: 1.8rem;
+        color: rgb(231, 198, 154);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        font-family: Arial, sans-serif;
+        // margin-top: 5px;
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 20px rgba(255, 255, 150, 0.4);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.html,
+  &.css,
+  &.js,
+  &.react,
+  &.github {
+    color: #ffffff;
+  }
+
+  .skill-label {
+    margin-top: 12px; 
+    font-size: 1rem;
+    color: #dddddd;
+    text-align: center;
+  }
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; 
+}
+
+.skill-label {
+  margin: 0;
+  font-size: 1rem;
+  color: #dddddd;
+  text-align: center;
+}
